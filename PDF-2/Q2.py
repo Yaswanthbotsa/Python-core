@@ -31,3 +31,7 @@ prod1 = Product("Remote-car",900)
 prod2 = Product("Laptop",75000)
 
 print(Product.final_price(prod1))
+Product.change_tax(2.2)
+print(Product.base_tax_rate)
+print(Product.final_price(prod1))
+print(Product.final_price(prod2))
