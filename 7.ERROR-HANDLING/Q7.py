@@ -16,8 +16,7 @@ class UserInput:
             print(f"Valid Integer: {self.value}")
         except ValueError:
             self.value = value
-            print(f"ValueError: '{value}' cannot be converted to integer."
-                  f" Please enter a valid number")
+            print(f"ValueError: '{value}' cannot be converted to integer.")
         except TypeError:
             self.value = value
             print(f"TypeError: '{value}' is of type '{type(value).__name__}'."
@@ -28,6 +27,7 @@ class UserInput:
 
 s = UserInput()
 s.get_integer(123)
+s.get_integer("abc")
 # s.get_integer([1,2,3])
 print(s)
         
